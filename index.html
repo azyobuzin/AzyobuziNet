@@ -1,197 +1,41 @@
 <!DOCTYPE html>
+
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <title>AzyobuziNet</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <script type="text/javascript">
+    <head>
+        <meta charset="utf-8" />
+        <title>AzyobuziNet</title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript">
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-29400475-3']);
-      _gaq.push(['_setDomainName', 'azyobuzi.net']);
-      _gaq.push(['_trackPageview']);
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-29400475-3']);
+          _gaq.push(['_setDomainName', 'azyobuzi.net']);
+          _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
 
-    </script>
-  </head>
-  <body data-spy="scroll" data-target="#navbar">
-    <nav id="navbar" class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
+        </script>
+    </head>
+    <body>
+        <header>
+            <div id="title">AzyobuziNet</div>
+            <nav>
+                <a href="/" class="home">home</a>
+                <a href="profile.html" class="link">profile</a>
+                <a href="projects.html" class="link">projects</a>
+                <a href="http://azyobuzin.hatenablog.com/">blog</a>
+            </nav>
+        </header>
 
-          <span class="brand">AzyobuziNet</span>
+        <div id="container"></div>
 
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#head">トップ</a></li>
-              <li><a href="#profile">自己紹介</a></li>
-              <li><a href="#activity">活動場所</a></li>
-              <li><a href="#projects">プロジェクト</a></li>
-              <li><a href="#kampa">カンパ</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
+        <div id="white"></div>
 
-    <section id="head">
-      <div class="container section">
-        <div class="row">
-          <div class="span6">
-            <h1>AzyobuziNet</h1>
-            <p>azyobuzin's personal website.</p>
-          </div>
-          <div class="span6">
-            <h2>.NET・Android界の先駆者</h2>
-            <p>なわけないだろ。</p>
-            
-            <h2>最新技術を追い求めて</h2>
-            <p>気分次第でね。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="profile">
-      <div class="container section">
-        <h1>自己紹介</h1>
-        <ul>
-          <li>東京都江戸川区在住の普通の学生。</li>
-          <li>アジョブジ星とか何のことやら忘れたけど、とりあえず AzyobuziNet って名前だけは残してる。</li>
-          <li>C# とか Android とかいじってるけどｇｄｇｄでプロジェクトが進まない。</li>
-          <li>ひたすら運動が嫌い。</li>
-          <li>あと Python</li>
-        </ul>
-      </div>
-    </section>
-    
-    <section id="activity">
-      <div class="container section">
-        <h1>活動場所</h1>
-        <p>Twitter: @<a href="https://twitter.com/azyobuzin">azyobuzin</a>, @<a href="https://twitter.com/azyobuzin_2">azyobuzin_2</a></p>
-        <p>Blog: <a href="http://azyobuzin.hatenablog.com/">アジョブジ星通信</a></p>
-        <p>GitHub: <a href="https://github.com/azyobuzin">azyobuzin</a></p>
-        <p>Qiita: <a href="http://qiita.com/users/azyobuzin">azyobuzin</a></p>
-        <p>Croudia: <a href="https://croudia.com/azyobuzin">azyobuzin</a></p>
-        <p>はてなフォトライフ: <a href="http://f.hatena.ne.jp/azyobuzin/">azyobuzin's fotolife</a></p>
-        <p>YouTube: <a href="http://www.youtube.com/user/azyobuzin">ぺぺたろうの動画置き場</a></p>
-      </div>
-    </section>
-    
-    <section id="projects">
-      <div class="container section">
-        <h1>プロジェクト</h1>
-        
-        <div class="row">
-          <div class="span6">
-            <div class="well">
-              <h2><span class="badge">web</span> img.azyobuzi.net</h2>
-              <p>さまざまな画像展開サービスの画像展開を行うAPIを提供します。</p>
-              <p><a href="http://img.azyobuzi.net/">webサイト</a> / <a href="http://img.azyobuzi.net/archives/70">ブログ記事</a></p>
-            </div>
-          </div>
-          
-          <div class="span6">
-            <div class="well">
-              <h2><span class="badge">web</span> TbrFeed</h2>
-              <p>
-                TumblrのダッシュボードをRSSに変換するwebサービスです。
-                Google Readerではちゃんと表示されるけど、IE・Firefoxでは、audio要素・video要素が表示されないorz
-              </p>
-              <p><a href="http://tbrfeed.azyobuzi.net/">webサイト</a></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="span6">
-            <div class="well">
-              <h2><span class="badge">Android</span> saostar</h2>
-              <p>個人的に使いやすいTwitterクライアントを目指して開発中。API利用規約がなんのこったい（死亡フラグ）</p>
-              <p><a href="https://github.com/azyobuzin/saostar">GitHub</a> / <a href="https://github.com/azyobuzin/Azyotter">活動停止中のWindows版</a></p>
-            </div>
-          </div>
-          
-          <div class="span6">
-            <div class="well">
-              <h2><span class="badge">Android</span> AzyotCheck</h2>
-              <p>シンプル is ベスト（スギちゃんではない）を目指したfoursquareクライアントです。<del>現在最優先でver. 2.0を開発中。</del><ins>飽きた</ins></p>
-              <p><a href="https://play.google.com/store/apps/details?id=net.azyobuzi.azyotcheck">Google Play</a> / <a href="https://github.com/azyobuzin/AzyotCheck">GitHub</a></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="span6">
-            <div class="well">
-              <h2><span class="badge">Android</span> FallFavo</h2>
-              <p>ごく一般的なふぁぼキューです。「ふぁぼキューが一般的じゃない」は禁句。</p>
-              <p>
-                <a href="http://fallfavo.azyobuzi.net/">webサイト</a> /
-                <a href="https://play.google.com/store/apps/details?id=net.azyobuzi.fallfavo">Google Play</a> /
-                <a href="https://github.com/azyobuzin/FallFavo">GitHub</a>
-              </p>
-            </div>
-          </div>
-          
-          <div class="span6">
-            <div class="well">
-              <h2><span class="badge">Android</span> Star2Box</h2>
-              <p><a href="http://shootingstar067.com/">ShootingStar</a>のレベル・経験値をDropboxにバックアップするアプリです。ソースコードは、はるさんに悪い気がするので非公開です。</p>
-              <p><a href="https://play.google.com/store/apps/details?id=net.azyobuzi.droppingshootingstar">Google Play</a></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="span6">
-            <div class="well">
-              <h2><span class="badge">YACQ</span> YACQ Plugin</h2>
-              <p>わかる人にはわかる。</p>
-              <p><a href="https://github.com/azyobuzin/YacqPlugin">GitHub</a></p>
-            </div>
-          </div>
-          
-          <div class="span6">
-            <div class="well">
-              <h2><span class="badge">YACQ</span> YacqOAuth</h2>
-              <p>すべてYACQで書かれたOAuth1.0の実装です。OAuth難しくないよ！</p>
-              <p><a href="https://github.com/azyobuzin/YacqOAuth">GitHub</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="kampa">
-      <div class="container section">
-        <h1>カンパ</h1>
-        <p>なんかください。</p>
-        
-        <ul>
-          <li><a href="https://www.hatena.ne.jp/sendpoint?name=azyobuzin">はてなポイント</a></li>
-          <li><a href="http://www.value-domain.com/?ref=azyobuzin">VALUE-DOMAIN</a></li>
-          <li><a href="http://db.tt/6Kf8HWZ">Dropbox</a></li>
-        </ul>
-      </div>
-    </section>
-    
-    <footer class="container">©2010-2012 azyobuzin</footer>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-  </body>
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="sitescript.js"></script>
+    </body>
 </html>
