@@ -18,3 +18,13 @@ header {
     font-size: 32px;
     margin: 0;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 24px;
+}
